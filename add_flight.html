@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Flight - Galactic Airlines</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="container narrow"><section class="card">
+<div class="page-heading"><div><p class="eyebrow">GALACTIC AIRLINES</p><h1>Add Flight</h1></div><a class="link" href="index.html">Back</a></div>
+<form id="addFlightForm" class="form-grid">
+<label>Flight Identifier<input id="flightIdentifier" name="flight_identifier" required maxlength="20"></label>
+<label>Departure Location<input id="departureLocation" name="departure_location" required maxlength="100"></label>
+<label>Destination Location<input id="destinationLocation" name="destination_location" required maxlength="100"></label>
+<label>Scheduled Departure<input id="scheduledDeparture" name="scheduled_departure" type="datetime-local" required></label>
+<label>Scheduled Arrival<input id="scheduledArrival" name="scheduled_arrival" type="datetime-local" required></label>
+<label>Aircraft Model<input id="aircraftModel" name="aircraft_model" required maxlength="100"></label>
+<label>Seating Capacity<input id="seatingCapacity" name="seating_capacity" type="number" min="1" max="1000" required></label>
+<label>Crew Count<input id="crewCount" name="crew_count" type="number" min="1" max="100" required></label>
+<button class="button primary full" type="submit">Add Flight</button></form>
+<p id="message" class="message"></p></section></main><script src="script.js"></script></body></html>
